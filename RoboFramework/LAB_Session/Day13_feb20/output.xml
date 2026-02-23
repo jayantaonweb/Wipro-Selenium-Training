@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-20T21:10:32.804412" rpa="false" schemaversion="5">
+<suite id="s1" name="Lab Auto Order" source="C:\Users\jkpja\PycharmProjects\RoboFramework\LAB_Session\Day13_feb20\Lab_Auto_Order.robot">
+<test id="s1-t1" name="Order Automation" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:10:33.002127" level="INFO">Opening browser 'chrome' to base url 'https://practice.automationtesting.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T21:10:33.001859" elapsed="16.359677"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-20T21:10:49.362415" elapsed="0.041498"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://li[@class='post-160 product type-product status-publish has-post-thumbnail product_cat-selenium product_tag-ruby product_tag-selenium has-post-title no-post-date has-post-category has-post-tag has-post-comment has-post-author first instock downloadable taxable shipping-taxable purchasable product-type-simple']//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'][normalize-space()='Add to basket']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T21:10:49.404420" elapsed="0.040157"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://div[@id='text-22-sub_row_1-0-2-1-0']//ul[@class='products']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T21:10:49.445138" elapsed="0.296382"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:10:49.742779" level="INFO">Clicking element 'xpath://li[@class='post-160 product type-product status-publish has-post-thumbnail product_cat-selenium product_tag-ruby product_tag-selenium has-post-title no-post-date has-post-category has-post-tag has-post-comment has-post-author first instock downloadable taxable shipping-taxable purchasable product-type-simple']//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'][normalize-space()='Add to basket']'.</msg>
+<arg>xpath://li[@class='post-160 product type-product status-publish has-post-thumbnail product_cat-selenium product_tag-ruby product_tag-selenium has-post-title no-post-date has-post-category has-post-tag has-post-comment has-post-author first instock downloadable taxable shipping-taxable purchasable product-type-simple']//a[@class='button product_type_simple add_to_cart_button ajax_add_to_cart'][normalize-space()='Add to basket']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:10:49.742400" elapsed="0.117109"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T21:10:51.862027" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T21:10:49.860177" elapsed="2.002340"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:10:51.864638" level="INFO">Opening url 'https://practice.automationtesting.in/basket/'</msg>
+<arg>https://practice.automationtesting.in/basket/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-02-20T21:10:51.864108" elapsed="1.698492"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T21:10:56.564357" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T21:10:53.563021" elapsed="3.001727"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://div[@id='content']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T21:10:56.565775" elapsed="0.294530"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:10:56.861328" level="INFO">Clicking element 'xpath://a[@class='checkout-button button alt wc-forward']'.</msg>
+<arg>xpath://a[@class='checkout-button button alt wc-forward']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:10:56.861117" elapsed="3.677604"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:00.539322" level="INFO">Typing text 'Jayant' into text field 'xpath://input[@id='billing_first_name']'.</msg>
+<arg>xpath://input[@id='billing_first_name']</arg>
+<arg>Jayant</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:00.539098" elapsed="0.108967"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:00.649297" level="INFO">Typing text 'Pandey' into text field 'xpath://input[@id='billing_last_name']'.</msg>
+<arg>xpath://input[@id='billing_last_name']</arg>
+<arg>Pandey</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:00.648958" elapsed="0.076205"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:00.725711" level="INFO">Typing text 'jay@abc.com' into text field 'xpath://input[@id='billing_email']'.</msg>
+<arg>xpath://input[@id='billing_email']</arg>
+<arg>jay@abc.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:00.725522" elapsed="0.121414"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:00.847956" level="INFO">Typing text '1234567890' into text field 'xpath://input[@id='billing_phone']'.</msg>
+<arg>xpath://input[@id='billing_phone']</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:00.847399" elapsed="0.131550"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://h3[@id='order_review_heading']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T21:11:00.979254" elapsed="0.282917"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:01.262924" level="INFO">Typing text 'asdf' into text field 'xpath://input[@id='billing_address_1']'.</msg>
+<arg>xpath://input[@id='billing_address_1']</arg>
+<arg>asdf</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:01.262667" elapsed="0.081041"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:01.344263" level="INFO">Typing text 'qwert' into text field 'xpath://input[@id='billing_city']'.</msg>
+<arg>xpath://input[@id='billing_city']</arg>
+<arg>qwert</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:01.344054" elapsed="0.075480"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:01.420403" level="INFO">Typing text '123456' into text field 'xpath://input[@id='billing_postcode']'.</msg>
+<arg>xpath://input[@id='billing_postcode']</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:01.420173" elapsed="0.087307"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T21:11:03.508516" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T21:11:01.507912" elapsed="2.000713"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://h4[normalize-space()='Subscribe Here']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-20T21:11:03.509185" elapsed="0.294024"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T21:11:04.804549" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T21:11:03.803863" elapsed="1.000795"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-20T21:11:04.805156" level="INFO">Clicking button '//input[@id='place_order']'.</msg>
+<arg>//input[@id='place_order']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T21:11:04.804988" elapsed="0.097559"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://p[@class='woocommerce-thankyou-order-received']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T21:11:04.902915" elapsed="1.942070"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-20T21:11:09.846654" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-20T21:11:06.845584" elapsed="3.001307"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T21:11:09.847184" elapsed="2.215034"/>
+</kw>
+<status status="PASS" start="2026-02-20T21:10:33.000480" elapsed="39.062750"/>
+</test>
+<status status="PASS" start="2026-02-20T21:10:32.805757" elapsed="39.258404"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Lab Auto Order" id="s1" pass="1" fail="0" skip="0">Lab Auto Order</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

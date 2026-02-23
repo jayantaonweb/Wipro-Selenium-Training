@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-18T16:01:09.146032" rpa="false" schemaversion="5">
+<suite id="s1" name="TestLevelST" source="C:\Users\jkpja\PycharmProjects\RoboFramework\TestSuite\TestLevelST.robot">
+<test id="s1-t1" name="Verify login with valid credentials" line="19">
+<kw name="Launch Browser" owner="Resource" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.671728" level="INFO">Launch the Browser</msg>
+<arg>Launch the Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.670894" elapsed="0.000963"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.669382" elapsed="0.002682"/>
+</kw>
+<kw name="Login" owner="Resource">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.674873" level="INFO">Enter username</msg>
+<arg>Enter username</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.674346" elapsed="0.000638"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.675975" level="INFO">Enter password</msg>
+<arg>Enter password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.675204" elapsed="0.000895"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.676844" level="INFO">click on login button</msg>
+<arg>click on login button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.676355" elapsed="0.000577"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.677952" level="INFO">user is on the home page</msg>
+<arg>user is on the home page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.677209" elapsed="0.001077"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.673556" elapsed="0.005151"/>
+</kw>
+<kw name="Close the Browser" owner="Resource" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.681546" level="INFO">Closing the Browser</msg>
+<arg>Closing the Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.680976" elapsed="0.000692"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.680049" elapsed="0.001935"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.667837" elapsed="0.014550"/>
+</test>
+<test id="s1-t2" name="Verify Add to cart functionality" line="22">
+<kw name="Launch Browser" owner="Resource" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.686020" level="INFO">Launch the Browser</msg>
+<arg>Launch the Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.685545" elapsed="0.000585"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.685011" elapsed="0.001299"/>
+</kw>
+<kw name="Login" owner="Resource">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.688206" level="INFO">Enter username</msg>
+<arg>Enter username</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.687749" elapsed="0.000559"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.688928" level="INFO">Enter password</msg>
+<arg>Enter password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.688525" elapsed="0.000505"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.689590" level="INFO">click on login button</msg>
+<arg>click on login button</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.689232" elapsed="0.000441"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.690190" level="INFO">user is on the home page</msg>
+<arg>user is on the home page</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.689861" elapsed="0.000409"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.687245" elapsed="0.003146"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.691852" level="INFO">User selects the product</msg>
+<arg>User selects the product</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.690995" elapsed="0.001033"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.693542" level="INFO">User adds the product to the cart</msg>
+<arg>User adds the product to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.692907" elapsed="0.000764"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.695264" level="INFO">User verifies that the product with details is added to the cart</msg>
+<arg>User verifies that the product with details is added to the cart</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.694542" elapsed="0.000837"/>
+</kw>
+<kw name="Close the Browser" owner="Resource" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-18T16:01:09.697643" level="INFO">Closing the Browser</msg>
+<arg>Closing the Browser</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-18T16:01:09.697186" elapsed="0.000556"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.696645" elapsed="0.001271"/>
+</kw>
+<status status="PASS" start="2026-02-18T16:01:09.683979" elapsed="0.014587"/>
+</test>
+<status status="PASS" start="2026-02-18T16:01:09.150962" elapsed="0.549949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestLevelST" id="s1" pass="2" fail="0" skip="0">TestLevelST</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

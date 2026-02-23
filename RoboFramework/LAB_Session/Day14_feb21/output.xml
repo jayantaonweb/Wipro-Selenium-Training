@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-21T19:08:13.264969" rpa="false" schemaversion="5">
+<suite id="s1" name="lab ecom Auto" source="C:\Users\jkpja\PycharmProjects\RoboFramework\LAB_Session\Day14_feb21\lab_ecom_Auto.robot">
+<test id="s1-t1" name="Contact Us Form" line="190">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:13.843223" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-21T19:08:13.842638" elapsed="5.820564"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-21T19:08:19.664549" elapsed="0.114268"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-21T19:08:20.782774" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-21T19:08:19.779840" elapsed="1.003857"/>
+</kw>
+<kw name="Remove Ad Overlay">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:20.788650" level="INFO">Executing JavaScript:
+document.querySelectorAll("[class*='ads'], [id*='ads'], iframe, ins").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("[class*='ads'], [id*='ads'], iframe, ins").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-21T19:08:20.787410" elapsed="0.081117"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:20.870159" level="INFO">Executing JavaScript:
+document.body.style.overflow = 'auto';
+Without any arguments.</msg>
+<arg>document.body.style.overflow = 'auto';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-21T19:08:20.868990" elapsed="0.018919"/>
+</kw>
+<status status="PASS" start="2026-02-21T19:08:20.785974" elapsed="0.102247"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:20.903828" level="INFO">Page title is 'Automation Exercise'.</msg>
+<arg>Automation Exercise</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-02-21T19:08:20.889078" elapsed="0.014995"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:20.905894" level="INFO">Clicking element 'xpath://a[normalize-space()='Contact us']'.</msg>
+<arg>xpath://a[normalize-space()='Contact us']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T19:08:20.904967" elapsed="3.409486"/>
+</kw>
+<kw name="Remove Ad Overlay">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:24.318212" level="INFO">Executing JavaScript:
+document.querySelectorAll("[class*='ads'], [id*='ads'], iframe, ins").forEach(e =&gt; e.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("[class*='ads'], [id*='ads'], iframe, ins").forEach(e =&gt; e.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-21T19:08:24.316833" elapsed="0.043326"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:24.362255" level="INFO">Executing JavaScript:
+document.body.style.overflow = 'auto';
+Without any arguments.</msg>
+<arg>document.body.style.overflow = 'auto';</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-21T19:08:24.360728" elapsed="0.023993"/>
+</kw>
+<status status="PASS" start="2026-02-21T19:08:24.315811" elapsed="0.069463"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:24.435125" level="INFO">Element 'xpath://h2[normalize-space()='Get In Touch']' is displayed.</msg>
+<arg>xpath://h2[normalize-space()='Get In Touch']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-21T19:08:24.386388" elapsed="0.048975"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:24.437039" level="INFO">Typing text 'ABCDEF' into text field 'xpath://input[@placeholder='Name']'.</msg>
+<arg>xpath://input[@placeholder='Name']</arg>
+<arg>${Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T19:08:24.436382" elapsed="0.392018"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:24.830688" level="INFO">Typing text 'abcdef@asdf' into text field 'xpath://input[@placeholder='Email']'.</msg>
+<arg>xpath://input[@placeholder='Email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T19:08:24.829800" elapsed="0.431454"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:25.263235" level="INFO">Typing text 'asdfghjk asdfghj' into text field 'xpath://input[@placeholder='Subject']'.</msg>
+<arg>xpath://input[@placeholder='Subject']</arg>
+<arg>asdfghjk asdfghj</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T19:08:25.262490" elapsed="0.505640"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:25.769446" level="INFO">Typing text 'qwertyuiopasdfghjklzxcvbnmqwertyuioasdfghjklzxcvbnm' into text field 'xpath://textarea[@id='message']'.</msg>
+<arg>xpath://textarea[@id='message']</arg>
+<arg>qwertyuiopasdfghjklzxcvbnmqwertyuioasdfghjklzxcvbnm</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-21T19:08:25.768915" elapsed="0.389021"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2026-02-21T19:08:26.159469" level="INFO">Sending C:\Users\jkpja\PycharmProjects\RoboFramework\LAB_Session\Day14_feb21\UsersjkpjaPycharmProjectsRoboFrameworkLAB_SessionDay14_feb21image_upload.png to browser.</msg>
+<msg time="2026-02-21T19:08:26.349643" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-21T19:08:26.350157" level="FAIL">InvalidArgumentException: Message: invalid argument: File not found : C:UsersjkpjaPycharmProjectsRoboFrameworkLAB_SessionDay14_feb21image_upload.png
+  (Session info: chrome=145.0.7632.109)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6910a4435
+	0x7ff6910a4490
+	0x7ff690e3d49d
+	0x7ff690e8fadb
+	0x7ff690ec17ca
+	0x7ff690e8aa46
+	0x7ff690ee5728
+	0x7ff690e88e38
+	0x7ff690e89d23
+	0x7ff691373b30
+	0x7ff69136e3b8
+	0x7ff69138e72a
+	0x7ff6910c07e5
+	0x7ff6910c978c
+	0x7ff6910ad794
+	0x7ff6910ad946
+	0x7ff691093457
+	0x7ffa7e74e8d7
+	0x7ffa801ac40c
+</msg>
+<arg>xpath://input[@name='upload_file']</arg>
+<arg>C:\Users\jkpja\PycharmProjects\RoboFramework\LAB_Session\Day14_feb21\image_upload.png</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="FAIL" start="2026-02-21T19:08:26.158856" elapsed="0.200955">InvalidArgumentException: Message: invalid argument: File not found : C:UsersjkpjaPycharmProjectsRoboFrameworkLAB_SessionDay14_feb21image_upload.png
+  (Session info: chrome=145.0.7632.109)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6910a4435
+	0x7ff6910a4490
+	0x7ff690e3d49d
+	0x7ff690e8fadb
+	0x7ff690ec17ca
+	0x7ff690e8aa46
+	0x7ff690ee5728
+	0x7ff690e88e38
+	0x7ff690e89d23
+	0x7ff691373b30
+	0x7ff69136e3b8
+	0x7ff69138e72a
+	0x7ff6910c07e5
+	0x7ff6910c978c
+	0x7ff6910ad794
+	0x7ff6910ad946
+	0x7ff691093457
+	0x7ffa7e74e8d7
+	0x7ffa801ac40c
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://input[@name='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-21T19:08:26.361721" elapsed="0.000260"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<arg>action=ACCEPT</arg>
+<arg>timeout=3</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" start="2026-02-21T19:08:26.362978" elapsed="0.000125"/>
+</kw>
+<kw name="Remove Ad Overlay">
+<status status="NOT RUN" start="2026-02-21T19:08:26.364308" elapsed="0.000140"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>xpath://div[@class='status alert alert-success']</arg>
+<arg>Success! Your details have been submitted successfully.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2026-02-21T19:08:26.365562" elapsed="0.000108"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-21T19:08:26.367677" elapsed="0.000184"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-02-21T19:08:26.368688" elapsed="0.000152"/>
+</kw>
+<status status="FAIL" start="2026-02-21T19:08:13.840013" elapsed="12.529910">InvalidArgumentException: Message: invalid argument: File not found : C:UsersjkpjaPycharmProjectsRoboFrameworkLAB_SessionDay14_feb21image_upload.png
+  (Session info: chrome=145.0.7632.109)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6910a4435
+	0x7ff6910a4490
+	0x7ff690e3d49d
+	0x7ff690e8fadb
+	0x7ff690ec17ca
+	0x7ff690e8aa46
+	0x7ff690ee5728
+	0x7ff690e88e38
+	0x7ff690e89d23
+	0x7ff691373b30
+	0x7ff69136e3b8
+	0x7ff69138e72a
+	0x7ff6910c07e5
+	0x7ff6910c978c
+	0x7ff6910ad794
+	0x7ff6910ad946
+	0x7ff691093457
+	0x7ffa7e74e8d7
+	0x7ffa801ac40c
+</status>
+</test>
+<status status="FAIL" start="2026-02-21T19:08:13.272227" elapsed="13.101958"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="lab ecom Auto" id="s1" pass="0" fail="1" skip="0">lab ecom Auto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.12 on win32)" generated="2026-02-20T16:56:54.692245" rpa="false" schemaversion="5">
+<suite id="s1" name="Csv" source="C:\Users\jkpja\PycharmProjects\RoboFramework\DataDriven\csv.robot">
+<test id="s1-t1" name="Login with user" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T16:56:54.942130" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T16:56:54.941900" elapsed="16.192900"/>
+</kw>
+<kw name="Login Test">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@name='username']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:11.138124" elapsed="1.655661"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:12.794167" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:12.793951" elapsed="0.023431"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:12.817895" level="INFO">Typing text 'admin123' into text field 'xpath://input[@name='password']'.</msg>
+<arg>xpath://input[@name='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:12.817581" elapsed="0.017938"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:12.835968" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:12.835750" elapsed="3.357216"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:16.193185" elapsed="1.031903"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:17.234301" level="INFO">Element 'xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']' is displayed.</msg>
+<arg>xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:17.225265" elapsed="0.009121"/>
+</kw>
+<arg>username=Admin</arg>
+<arg>password=admin123</arg>
+<status status="PASS" start="2026-02-20T16:57:11.136701" elapsed="6.097774"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T16:57:17.234924" elapsed="2.729432"/>
+</kw>
+<status status="PASS" start="2026-02-20T16:56:54.940632" elapsed="25.023969"/>
+</test>
+<test id="s1-t2" name="Login with user" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T16:57:19.966617" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T16:57:19.966410" elapsed="10.870005"/>
+</kw>
+<kw name="Login Test">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@name='username']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:30.838279" elapsed="1.859923"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:32.698629" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:32.698395" elapsed="0.025527"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:32.724310" level="INFO">Typing text 'admin123' into text field 'xpath://input[@name='password']'.</msg>
+<arg>xpath://input[@name='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:32.724085" elapsed="0.023044"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:32.747638" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:32.747398" elapsed="3.754479"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:36.502063" elapsed="1.033992"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:37.548074" level="INFO">Element 'xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']' is displayed.</msg>
+<arg>xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:37.536225" elapsed="0.011925"/>
+</kw>
+<arg>username=Admin</arg>
+<arg>password=admin123</arg>
+<status status="PASS" start="2026-02-20T16:57:30.837262" elapsed="6.710968"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T16:57:37.548668" elapsed="2.985596"/>
+</kw>
+<status status="PASS" start="2026-02-20T16:57:19.965327" elapsed="20.569206"/>
+</test>
+<test id="s1-t3" name="Login with user" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-20T16:57:40.537066" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-20T16:57:40.536622" elapsed="10.074437"/>
+</kw>
+<kw name="Login Test">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://input[@name='username']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:50.612346" elapsed="2.055261"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:52.667931" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:52.667744" elapsed="0.029095"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:52.697292" level="INFO">Typing text 'admin123' into text field 'xpath://input[@name='password']'.</msg>
+<arg>xpath://input[@name='password']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:52.697029" elapsed="0.019454"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:52.717045" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-20T16:57:52.716835" elapsed="4.521588"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:57.238572" elapsed="0.845941"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-20T16:57:58.102351" level="INFO">Element 'xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']' is displayed.</msg>
+<arg>xpath://h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-20T16:57:58.084698" elapsed="0.017757"/>
+</kw>
+<arg>username=Admin</arg>
+<arg>password=admin123</arg>
+<status status="PASS" start="2026-02-20T16:57:50.611882" elapsed="7.490692"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-20T16:57:58.103519" elapsed="2.716292"/>
+</kw>
+<status status="PASS" start="2026-02-20T16:57:40.535359" elapsed="20.284811"/>
+</test>
+<status status="PASS" start="2026-02-20T16:56:54.694156" elapsed="66.126580"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Csv" id="s1" pass="3" fail="0" skip="0">Csv</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-20T16:57:19.965439" level="WARN">Multiple tests with name 'Login with user' executed in suite 'Csv'.</msg>
+<msg time="2026-02-20T16:57:40.535462" level="WARN">Multiple tests with name 'Login with user' executed in suite 'Csv'.</msg>
+</errors>
+</robot>
