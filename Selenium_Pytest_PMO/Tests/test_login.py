@@ -1,9 +1,18 @@
 # check the title of the web page
+import time
+
 import pytest
 
-@pytest.mark.usefixtures("setup")
+from Selenium_Pytest_PMO.Pages.Login_page import LoginPage
+
+
+@pytest.mark.usefixtures("driver")
 class TestLogin:
 
-    def test_title(self):
-        print(self.driver.title)
-        assert "OrangeHRM" in self.driver.title
+
+    def test_valid_login(self, driver):
+        #time.sleep(3s)
+        lp = LoginPage(driver)
+        lp.login("Admin","admin123")
+        assert "OrangeHRM" in driver.title
+
